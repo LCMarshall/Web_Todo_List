@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TODO List</title>
+	</head>
+	<body>
+		<h2>TODO List</h2>
+		<ul>
+			<li>Walk the dog</li>
+			<li>Take out the trash</li>
+			<li>Wash the car</li>
+			<li>Buy Grogeries</li>
+		</ul>
+		<p>Please enter any additional TODO items on the form below. Please click submit when you have completed entering your items.</p>
+		<form method="POST" action="/process-form.php">
+		    <p>
+		    	<label for="TODO_Item">TODO Item:</label>
+		    	<input type="text" id="TODO_item" name="TODO_item" placeholder="TODO item">
+		    </p>
+		    <p>
+			    <button type="submit" name="submit">Submit</button>
+			</p>
+		</form>
+	</body>
+</html>
