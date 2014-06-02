@@ -68,7 +68,7 @@ if (isset($saved_filename)) {
 		<h2>TODO List</h2>
 <ul>		
 		<?	foreach($to_do_items as $key => $item): ?>
-				 <li><?= htmlspecialchars(strip_tags("$item <a href = '?id=$key'>Mark Complete</a>")); ?></li> 	
+				 <li><?= htmlspecialchars(strip_tags($item)) . "<a href = '?id=$key'>Mark Complete</a>"; ?></li> 	
 		<?endforeach;?>
 </ul>		
 		<p>Please enter any additional TODO items on the form below. Please click submit when you have completed entering your items.</p>
